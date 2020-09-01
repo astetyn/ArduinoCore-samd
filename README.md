@@ -4,8 +4,8 @@ This core is designed for Inspirium vehicle project which is based on ATSAMD21G1
 Main differences are in pinout which is cloned from Arduino Zero.  
 With this core, you can use all pins from the MCU.  
 
-JSON package file with package zip can be found on https://github.com/astetyn/StorageAndExamples/tree/master/inspirium_core_files.
-Hardware files can be found on https://easyeda.com/astetyn/cerebellum_3-0.
+JSON package file with package zip can be found on https://github.com/astetyn/StorageAndExamples/tree/master/inspirium_core_files.  
+Hardware files can be found on https://easyeda.com/astetyn/cerebellum_3-0.  
 
 *Inspirium will be the fully autonomous solar charged small vehicle.  
 It will be able to explore dangerous places, to secure area with camera system  
