@@ -79,14 +79,14 @@ extern "C" unsigned int PINCOUNT_fn();
  */
 // #define digitalPinToTimer(P)
 
-// LEDs
-#define PIN_LED_13           (13u)
+// LEDs --Inspirium Core does not use these LEDs
+/*#define PIN_LED_13           (13u)
 #define PIN_LED_RXL          (25u)
 #define PIN_LED_TXL          (26u)
 #define PIN_LED              PIN_LED_13
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
-#define LED_BUILTIN          PIN_LED_13
+#define LED_BUILTIN          PIN_LED_13*/
 
 /*
  * Analog pins
@@ -97,6 +97,7 @@ extern "C" unsigned int PINCOUNT_fn();
 #define PIN_A3               (17ul)
 #define PIN_A4               (18ul)
 #define PIN_A5               (19ul)
+#define PIN_A6               (25ul) //additional pin for ECHO analog input
 #define PIN_DAC0             (14ul)
 
 static const uint8_t A0  = PIN_A0;
@@ -105,6 +106,7 @@ static const uint8_t A2  = PIN_A2;
 static const uint8_t A3  = PIN_A3;
 static const uint8_t A4  = PIN_A4;
 static const uint8_t A5  = PIN_A5;
+static const uint8_t A6  = PIN_A6; //additional pin for ECHO analog input
 static const uint8_t DAC0 = PIN_DAC0;
 #define ADC_RESOLUTION		12
 
@@ -115,9 +117,9 @@ static const uint8_t ATN = PIN_ATN;
 /*
  * Serial interfaces
  */
-// Serial (EDBG)
-#define PIN_SERIAL_RX       (31ul)
-#define PIN_SERIAL_TX       (30ul)
+// Serial
+#define PIN_SERIAL_RX       (0ul)
+#define PIN_SERIAL_TX       (1ul)
 #define PAD_SERIAL_TX       (UART_TX_PAD_2)
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_3)
 
@@ -160,7 +162,7 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (27ul)
+//#define PIN_USB_HOST_ENABLE (27ul) --Inspirium Core does not use this pin
 #define PIN_USB_DM          (28ul)
 #define PIN_USB_DP          (29ul)
 

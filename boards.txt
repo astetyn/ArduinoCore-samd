@@ -16,7 +16,7 @@
 
 # Inspirium v3 Board
 # --------------------------------------
-inspirium.name=Inspirium
+inspirium.name=Inspirium 3.0
 inspirium.vid.0=0x2341
 inspirium.pid.0=0x804d
 inspirium.vid.1=0x2341
